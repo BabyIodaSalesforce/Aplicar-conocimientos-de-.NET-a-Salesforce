@@ -1,0 +1,16 @@
+1.Navegue hasta https://workbench.developerforce.com/login.php.
+2.Para Environment (Entorno), seleccione Production (Producción).
+3.Seleccione la versión de la API más reciente desde el menú desplegable API Version.
+4.Acepte las condiciones del servicio y haga clic en Iniciar sesión con Salesforce.
+5.Ingrese sus credenciales de inicio de sesión y haga clic en Iniciar sesión.
+6.Para permitir que Workbench acceda a su información, haga clic en Allow (Permitir).
+7.Después de iniciar sesión, seleccione queries > SOQL Query (consultas | Consulta SOQL).
+8.Seleccione Account (Cuenta) como el objeto.
+9.Mantenga pulsada la tecla Ctrl y seleccione CreatedDate, Name, Phone, Type
+(Fecha de creación, Nombre, Teléfono, Tipo) de la lista de campos. A medida que selecciona 
+los objetos y los campos, la consulta SOQL se crea por usted en el cuadro de texto. 
+Tiene el siguiente aspecto:
+  SELECT CreatedDate, Name, Phone, Type FROM Account
+10.Haga clic en Query (Consultar) para ver los resultados devueltos como una lista.
+
+
