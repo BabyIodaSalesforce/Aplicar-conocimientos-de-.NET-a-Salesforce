@@ -1,0 +1,14 @@
+1.Después de iniciar sesión en Workbench, seleccione queries > SOQL Query (consultas | Consulta SOQL).
+2.Seleccione Contact (Contacto) como el objeto.
+3.Mantenga pulsada la tecla Ctrl y seleccione AccountId, Email, Id, LastName (Id. de cuenta, Email, Id. Apellidos) 
+de la lista de campos. A medida que selecciona los objetos y los campos, la consulta SOQL se crea por usted en el cuadro de texto.
+4.Haga clic en Query (Consultar) para ver los resultados devueltos como una lista. Tiene el siguiente aspecto:
+    SELECT AccountId, Email, Id, LastName FROM Contact
+5.Desde la lista desplegable Filter results by (Filtrar resultados por), seleccione Email.
+6.Pase con la tecla de tabulación al siguiente campo y haga clic en la flecha del cuadro desplegable para ver una lista de operadores posibles.
+7.Seleccione contains (contiene) de la lista y luego pase con la tecla de tabulación al último campo e ingrese .net. La consulta construida tiene el siguiente aspecto:
+SELECT AccountId, Email, Id, LastName FROM Contact WHERE Email LIKE '%.net%'
+8.Mientras está en ello, ordene los resultados por LastName seleccionando LastName (Apellidos) desde la lista desplegable Sort results by (Ordenar resultados por).
+9.Deje los otros valores predeterminados de A to Z y Nulls First. Su consulta ahora tiene un aspecto como este:
+SELECT AccountId,Email,Id,LastName FROM Contact  WHERE Email LIKE '%.net%' ORDER BY LastName ASC NULLS FIRST
+10.Haga clic en Query (Consultar) para devolver los resultados como una lista ordenada.
