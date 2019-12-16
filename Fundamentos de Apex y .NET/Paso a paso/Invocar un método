@@ -1,0 +1,10 @@
+1.En Configuración, seleccione Su nombre > Developer Console para abrir Developer Console.
+Seleccione Debug > Open Execute Anonymous Window.(Depurar > Abrir ventana de ejecución anónima).
+
+2.Elimine el código existente e inserte el siguiente fragmento de código:
+
+EmailManager.sendMail('Su dirección de email', 'Tutorial de Trailhead', 'cuerpo 123');
+
+3.Asegúrese de que la opción Open Log (Abrir registro) está seleccionada y haga clic en Execute (Ejecutar). Una nueva ficha le muestra el registro de ejecución.
+
+4.Seleccione la opción Debug Only (Solo depurar) de modo que vea únicamente las declaraciones de depuración mostradas en el registro. Debería ver un mensaje indicándole que el Email se envió correctamente. Debería recibir un mensaje de email si ingresó una dirección de email válida
